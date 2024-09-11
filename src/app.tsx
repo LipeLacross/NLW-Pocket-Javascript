@@ -1,10 +1,10 @@
-import { Dialog } from "@radix-ui/react-dialog";
-import { CreateGoal } from "./components/create-goal";
-import { WeeklySummary } from "./components/weekly-summary";
-import { useQuery } from "@tanstack/react-query";
-import { getSummary } from "./http/get-summary";
-import { Loader2 } from "lucide-react";
-import { EmptyGoals } from "./components/empty-goals";
+import { Dialog } from '@radix-ui/react-dialog'
+import { CreateGoal } from './components/create-goal'
+import { WeeklySummary } from './components/weekly-summary'
+import { useQuery } from '@tanstack/react-query'
+import { getSummary } from './http/get-summary'
+import { Loader2 } from 'lucide-react'
+import { EmptyGoals } from './components/empty-goals'
 
 export function App() {
   const { data, isLoading } = useQuery({
@@ -22,10 +22,13 @@ export function App() {
 
   return (
     <Dialog>
-      {data.summary.total > 0 ? <WeeklySummary summary={data.summary} /> : <EmptyGoals />}
+      {data.summary.total > 0 ? (
+        <WeeklySummary summary={data.summary} />
+      ) : (
+        <EmptyGoals />
+      )}
 
       <CreateGoal />
     </Dialog>
   )
 }
-
