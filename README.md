@@ -28,22 +28,71 @@ Este projeto é uma aplicação web moderna desenvolvida com React e TypeScript,
 - **Day.js**: Biblioteca para manipulação de datas.
 - **Zod**: Biblioteca de validação de esquemas.
 - **ESLint**: Ferramenta para análise estática do código e manutenção da qualidade.
+- **@hookform/resolvers**: Resolvedores para integração com `react-hook-form`.
+- **@radix-ui/react-dialog**: Componente de diálogo acessível.
+- **@radix-ui/react-progress**: Componente de barra de progresso acessível.
+- **@radix-ui/react-radio-group**: Componente de grupo de botões de rádio acessível.
+- **react-hook-form**: Biblioteca para manipulação de formulários.
+- **tailwind-merge**: Utilitário para mesclar classes do Tailwind CSS.
+- **tailwind-variants**: Utilitário para variantes do Tailwind CSS.
+- **@biomejs/biome**: Ferramenta de linting e formatação de código.
 
 ## 📁 Estrutura do Projeto
 
-- **public/**: Contém arquivos estáticos.
-    - favicon.ico: Ícone do site.
-    - index.html: Arquivo HTML principal.
-- **src/**
-    - **app/**: Componentes principais da aplicação.
-    - **components/**: Componentes reutilizáveis.
-    - **http/**: Funções para requisições HTTP.
-    - **ui/**: Componentes de interface de usuário.
-    - main.tsx: Ponto de entrada da aplicação React.
-    - index.css: Estilos globais da aplicação.
-- **.gitignore**: Arquivo para especificar quais arquivos e diretórios o Git deve ignorar.
+- **biome.json**: Configuração do Biome para linting e formatação de código.
+- **docker-compose.yml**: Configuração do Docker Compose para ambientes de contêiner.
+- **Dockerfile**: Arquivo para construção da imagem Docker.
+- **Extra/**: Arquivos adicionais.
+    - **NLW Pocket JS • in.orbit (Community).fig**: Arquivo de design do Figma.
+    - **ui.zip**: Arquivo ZIP com recursos de UI.
+    - **Wallpapers NLW Pocket JavaScript-20240910T221314Z-001.zip**: Arquivo ZIP com papéis de parede.
+- **index.html**: Arquivo HTML principal.
+- **LICENSE**: Arquivo de licença do projeto.
+- **netlify.toml**: Configuração do Netlify para deploy.
+- **package-lock.json**: Arquivo de bloqueio de dependências do npm.
 - **package.json**: Arquivo de configuração do projeto e dependências.
-- **tsconfig.json**: Configuração do TypeScript.
+- **postcss.config.js**: Configuração do PostCSS para processamento de CSS.
+- **public/**: Arquivos públicos estáticos.
+    - **favicon.svg**: Ícone do site.
+    - **icon.svg**: Ícone adicional do site.
+- **README.md**: Arquivo README principal do projeto.
+- **README_EN.md**: Arquivo README em inglês.
+- **src/**: Código fonte da aplicação.
+    - **app.tsx**: Componente principal da aplicação.
+    - **assets/**: Recursos gráficos e imagens.
+        - **in-orbit-logo.svg**: Logotipo "In Orbit".
+        - **lets-start-illustration.svg**: Ilustração "Let's Start".
+        - **logo-in-orbit.svg**: Logotipo "Logo In Orbit".
+        - **rocket-launch-illustration.svg**: Ilustração "Rocket Launch".
+    - **components/**: Componentes React reutilizáveis.
+        - **create-goal.tsx**: Componente para criar metas.
+        - **empty-goals.tsx**: Componente para exibir quando não há metas.
+        - **in-orbit-icon.tsx**: Componente de ícone "In Orbit".
+        - **pending-goals.tsx**: Componente para exibir metas pendentes.
+        - **summary.tsx**: Componente de resumo de metas.
+        - **ui/**: Componentes de interface de usuário.
+            - **button.tsx**: Componente de botão.
+            - **dialog.tsx**: Componente de diálogo.
+            - **input.tsx**: Componente de entrada de texto.
+            - **label.tsx**: Componente de rótulo.
+            - **outline-button.tsx**: Componente de botão com contorno.
+            - **progress-bar.tsx**: Componente de barra de progresso.
+            - **radio-group.tsx**: Componente de grupo de botões de rádio.
+            - **separator.tsx**: Componente de separador.
+        - **weekly-summary.tsx**: Componente de resumo semanal.
+    - **http/**: Funções para requisições HTTP.
+        - **create-goal-completion.ts**: Função para completar uma meta.
+        - **create-goal.ts**: Função para criar uma meta.
+        - **get-pending-goals.ts**: Função para obter metas pendentes.
+        - **get-summary.ts**: Função para obter o resumo das metas.
+    - **index.css**: Estilos globais da aplicação.
+    - **main.tsx**: Ponto de entrada da aplicação React.
+    - **vite-env.d.ts**: Declarações de ambiente do Vite.
+- **tailwind.config.js**: Configuração do Tailwind CSS.
+- **tsconfig.app.json**: Configuração do TypeScript para a aplicação.
+- **tsconfig.json**: Configuração principal do TypeScript.
+- **tsconfig.node.json**: Configuração do TypeScript para Node.js.
+- **tsconfig.tsbuildinfo**: Informações de construção do TypeScript.
 - **vite.config.ts**: Configuração do Vite.
 
 ## 🛠️ Abrir e rodar o projeto
