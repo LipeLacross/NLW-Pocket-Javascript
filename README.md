@@ -86,3 +86,9 @@ Para iniciar o projeto localmente, siga os passos abaixo:
 ## 🌐 Deploy
 
 Para o deploy da aplicação, siga as instruções específicas do serviço de hospedagem escolhido. Certifique-se de que o ambiente de produção está configurado para servir a aplicação gerada pela build.
+
+## 📚 Material de Apoio
+
+Para mais informações e suporte, consulte a documentação completa da Rocketseat no link abaixo:
+
+- [Documentação do NLW Pocket Javascript](https://docs-rocketseat.notion.site/NLW-Pocket-JavaScript-4e6d735b40d7470aa4fe46919f8daef9)
